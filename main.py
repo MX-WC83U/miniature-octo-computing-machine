@@ -6,6 +6,7 @@ import logging
 from dotenv import find_dotenv, load_dotenv
 import telegram 
 import telegram.ext
+from telegram import Updater
 #from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext
 from transformers import pipeline, AutoTokenizer, AutoModelForCausalLM
 
