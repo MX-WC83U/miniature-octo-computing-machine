@@ -12,7 +12,7 @@ import telegram.ext
 
 from telegram import Update
 
-from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
+#from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 
 # Load environment variables from .env file
 
