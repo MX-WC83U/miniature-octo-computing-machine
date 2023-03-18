@@ -47,7 +47,7 @@ async def main() -> None:
     bot = telegram.Bot(token=TELEGRAM_BOT_TOKEN)
 
     # Create an Updater object
-    updater = telegram.ext.Updater(bot.token, use_context=True)
+    updater = telegram.ext.Updater(bot.token)
 
     # Register handlers for different commands and messages
     updater.dispatcher.add_handler(telegram.ext.CommandHandler('start', start))
@@ -59,4 +59,4 @@ async def main() -> None:
 
 if __name__ == '__main__':
     # Start the main function
-    asyncio.run(main())
+    asyncio.get_event_loop().run_forever()
