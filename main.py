@@ -43,7 +43,7 @@ def main() -> None:
     bot = telegram.Bot(token=TELEGRAM_BOT_TOKEN)
 
     # Create an Updater object
-    updater = telegram.ext.Updater(bot.token, use_context=True)
+    updater = telegram.ext.Updater(bot.token)
 
     # Register handlers for different commands and messages
     updater.dispatcher.add_handler(telegram.ext.CommandHandler('start', start))
