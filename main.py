@@ -47,8 +47,10 @@ async def main() -> None:
     bot = telegram.Bot(token=TELEGRAM_BOT_TOKEN)
 
     # Create an Updater object
-    updater = telegram.ext.Updater(bot.token, use_context=True)
-
+    #updater = telegram.ext.Updater(bot.token, use_context=True)
+    update_queue = telegram.ext.Queue()
+    updater = telegram.ext.Updater(bot.token, update_queue)
+    
     # Register handlers for different commands and messages
     updater.dispatcher.add_handler(telegram.ext.CommandHandler('start', start))
     updater.dispatcher.add_handler(telegram.ext.MessageHandler(telegram.ext.Filters.text & ~telegram.ext.Filters.command, generate_text))
