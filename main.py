@@ -6,7 +6,9 @@ import os
 
 from dotenv import load_dotenv
 
-import requests
+import requests 
+import telegram 
+import telegram.ext
 
 from telegram import Update
 
