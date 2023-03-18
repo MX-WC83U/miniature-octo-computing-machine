@@ -42,7 +42,7 @@ async def generate_text(update: Update, context: telegram.ext.CallbackContext) -
         error_message = f'An error occurred while generating text: {e}'
         await update.message.reply_text(error_message)
 
-async def main() -> None:
+async def main(update, context):
     # Create a Telegram bot object
     bot = telegram.Bot(token=TELEGRAM_BOT_TOKEN)
 
