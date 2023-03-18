@@ -62,7 +62,7 @@ def generate_text(update: Update, context):
 
         update.message.reply_text(error_message)
 
-def main(update, context):
+def main(update:Update, context):
 
     # Create an Updater object with your bot's token
 
