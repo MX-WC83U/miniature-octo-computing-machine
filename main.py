@@ -13,7 +13,7 @@ load_dotenv(find_dotenv())
 
 TELEGRAM_BOT_TOKEN = os.environ.get('TELEGRAM_BOT_TOKEN')
 HUGGINGFACE_API_KEY = os.environ.get('HUGGINGFACE_API_KEY')
-MODEL_NAME_OR_PATH = "EleutherAI/gpt-neo-1.3B"
+#MODEL_NAME_OR_PATH = "EleutherAI/gpt-neo-1.3B"
 MODEL_NAME_OR_OATH = "t5-small"
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
